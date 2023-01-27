@@ -36,6 +36,8 @@ public class Operators {
 
         // }
         
+        
+        // Relational Operators
         // System.out.println(x == y);
         boolean result = x == y;
         System.out.println(result);
@@ -50,5 +52,19 @@ public class Operators {
         
         System.out.println(x != y);
 
+        int num = 12;
+        // Post increment - increments the number by 1
+        System.out.println(num++);  // o/p will be 12
+        System.out.println(num);    // o/p will be 13
+
+        // Post decrement - decrements the number by 1
+        num--;
+
+        // Pre increment - increment the number by 1 in same statement
+        System.out.println(++num);
+
+        String name = "Ram";
+        System.out.println(name instanceof String);
+        
     }
 }
