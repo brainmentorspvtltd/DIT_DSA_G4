@@ -1,3 +1,7 @@
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class CommonUtils {
 	public String getProperName(String name) {
 		//name = "ramESH KUMaR SharMA";
@@ -16,6 +20,15 @@ public class CommonUtils {
 		}
 		
 		return properName;
+	}
+	
+	public String formatDate() {
+//		Internationalization - I18N
+		Locale locale = new Locale("hi","IN");
+		Date date = new Date();
+		DateFormat df = DateFormat.getDateInstance(DateFormat.LONG, locale);
+		String formattedDate = df.format(date);
+		return formattedDate;
 		
 	}
 }

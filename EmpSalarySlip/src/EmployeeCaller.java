@@ -11,7 +11,9 @@ public class EmployeeCaller {
 		//System.out.println(ram);
 		
 //		System.out.println("Name is : " + ram.getName());
-		System.out.println("Name is : " + ram.showEmp());
+//		System.out.println("Name is : " + ram.showEmp());
+		
+		System.out.println(ram.showEmp());
 		System.out.println("Email is : " + ram.getEmail());
 		System.out.println("Basic Salary is : " + ram.getSalary());
 		System.out.println("Payable Salary : " + ram.calcSalary());

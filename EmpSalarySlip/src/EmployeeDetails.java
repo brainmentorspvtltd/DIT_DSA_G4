@@ -88,7 +88,8 @@ public class EmployeeDetails {
 	public String showEmp() {
 		CommonUtils utils = new CommonUtils();
 		this.name = utils.getProperName(name);
-		return this.name;
+		String date = utils.formatDate();
+		return date + "\n" + this.name;
 	}
 	
 	public double calcSalary() {
