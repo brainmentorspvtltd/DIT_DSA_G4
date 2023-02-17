@@ -85,12 +85,13 @@ public class EmployeeDetails {
 		return this.salary * this.pf;
 	}
 	
-	public String showEmp() {
-		CommonUtils utils = new CommonUtils();
-		this.name = utils.getProperName(name);
-		String date = utils.formatDate();
-		return date + "\n" + this.name;
-	}
+//	public String showEmp() {
+//		CommonUtils utils = new CommonUtils("en", "IN");
+//		this.name = utils.getProperName(name);
+//		String date = utils.formatDate();
+//		String formatSalary = utils.formatNumber(calcSalary());
+//		return date + "\n" + this.name + "\n" + formatSalary;
+//	}
 	
 	public double calcSalary() {
 		double earnings = this.salary + getHRA() + getDA() + getMA() + getTA();
@@ -99,9 +100,15 @@ public class EmployeeDetails {
 		return payableSalary;
 	}
 	
-//	@Override
-//	public String toString() {
-//		return this.name + "," + this.email;
-//	}
+	@Override
+	public String toString() {
+		CommonUtils utils = new CommonUtils("en", "US"); // Has-A
+		this.name = utils.getProperName(name);
+		String date = utils.formatDate();
+		String formatSalary = utils.formatNumber(calcSalary());
+		return  "Date : " + date + "\n" + 
+				"Name : " + this.name + "\n" + 
+				"Salary : " + formatSalary;
+	}
 	
 }
