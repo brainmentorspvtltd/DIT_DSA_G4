@@ -3,13 +3,13 @@ public class EmployeeDetails {
 	private String name;
 	private double salary;
 	private String email;
-	private double hra;
-	private double ma;
-	private double ta;
-	private double da;
-	private double pf;
-	private double tds;
-	private String company;
+	private final double hra;
+	private final double ma;
+	private final double ta;
+	private final double da;
+	private final double pf;
+	private final double tds;
+	private final String company;
 	
 	public EmployeeDetails() {
 		this.company = "Brain Mentors";
