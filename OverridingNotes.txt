@@ -1,0 +1,129 @@
+Overloading vs Overriding
+
+- Overloading is performed when we pass arguments
+- Overriding means to update parent's methods
+
+- Overloading will have different arguments in parent and child function
+- Overriding means to change logic
+
+======================================
+
+Final Keyword
+- to freeze the value
+- there are 3 ways to use final keyword
+	- class
+	- method
+	- variable
+
+Super vs This
+- child constructor implicitly calls parent's class constructor
+- if we have to call parent class param const. then it will be explicit call
+
+Method Overriding vs Variable Overriding
+- methods are overrided but variables are not
+- variables are bind with type not with object
+- methods are bind with object
+
+======================================
+
+Overriding Rules
+1. Weaker access rule
+	Scope of variables/methods
+	- public < protected < default < private
+
+Packages in Java
+- similar classes will be grouped together
+- package naming convention
+com.companyName.projectName.module.sub_module
+org.companyName.projectName.module.sub_module
+
+2. Covariant return type
+==================================================
+
+
+
+
+MultiLevel Inheritance
+
+Overloading
+
+Overloading vs Overriding
+- No IS-A relation is involved in overloading
+- In overriding we have IS-A relation
+
+- In overriding arguments must be same, return type could be covariant
+- Arguments can be different and it don't depend on return type
+
+- Weaker access concept in overriding
+- No weaker acccess in overloading
+
+Type Promotion
+
+
+Task Manager CRUD App
+Note - Use SRP, DRY, Packages...
+
+View
+	Menu -
+	1. Enter New Task
+	2. Read All Task
+	3. Update Task
+	4. Delete Task
+	
+Enter your choice : 1
+Enter Task Name : 
+Enter Task Desc : 
+// create object of task class and add in arraylist	
+
+Enter your choice : 2
+Show all task from arraylist
+
+Enter your choice : 3
+Enter task name : 
+// update object in arraylist
+
+Enter your choice : 4
+Enter task name :
+// delete task from arraylist
+
+=====================================
+Abstract Classes
+- abstract class is a type of class that declares one or more abstract methods
+- we cannot create object of abstract class
+- abstract classes are supposed to be inherited
+
+Abstract Method
+- the method without any implementation
+- method without body
+- it is always declared in abstract class
+
+S.O.L.I.D
+S - SRP - Single Responsibility Principle
+	- provide single Responsibility to each class
+O - OCP - Open Close Principle
+	- class should be open for extension but closed for modification
+L - LSP - Liskov Substitution Principle
+	- Upcasting and Downcasting
+I - ISP - Interface Segregation Principle
+	- Segregate interfaces when code is too large
+D - DRY/DIP - Dependency Inversion Principle
+	DIP - Dependency of one class should be on either Interface or Abstract Class
+	- but not on concrete class
+
+Interfaces
+Interfaces tells us What to do...?
+Class tells us How to do...?
+- Interfaces are 100% abstract, while abstract class is partially abstract
+- In Interfaces each method is abstract
+
+Multiple Inheritance
+- we cannot inherit multiple classes from one class
+  Why multiple inheritance is not supported with classes in Java ?
+- we can inherit multiple Interfaces from one class
+
+Interface Use Ways
+- Class Way
+- Object Way
+- Lambda Expressions
+
+
